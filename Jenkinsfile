@@ -14,7 +14,7 @@ pipeline {
 								
 								}
 					 
-					 stage ('start-httpd')
+					   stage ('start-httpd')
 		
 								steps {
 											sh "service httpd start"
@@ -24,7 +24,7 @@ pipeline {
 				
 						stage ('deploy index') {
 						
-						steps {
+						  steps {
 						
 									sh "cp -r index.html /var/www/html/"
 									sh "chmod -R 777 /var/www/html/index.html"
@@ -38,18 +38,3 @@ pipeline {
 			}
 			
 			
-			
-			
-			
-			
-
-
-
-
-
-
-
-
-
-
-
