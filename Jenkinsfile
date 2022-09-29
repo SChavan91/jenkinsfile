@@ -22,7 +22,7 @@ pipeline {
 								}
 							
 				
-						stage ('deploy index) {
+						stage ('deploy index') {
 						
 						steps {
 						
