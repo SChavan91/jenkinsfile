@@ -13,16 +13,16 @@ pipeline {
 										sh "yum install httpd -y"
 								
 								}
-					 
-					   stage ('start-httpd')
+					 }
+					   stage ('start-httpd') {
 		
 								steps {
 											sh "service httpd start"
 								
 								}
+							}
 							
-							
-						stage ('deploy index') 
+						stage ('deploy index') {
 						
 						  steps {
 						
