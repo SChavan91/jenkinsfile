@@ -7,7 +7,7 @@ pipeline {
 				
 				stages {
 				
-				     stage ('install-apache')
+				     stage ('install-apache') {
 
 								steps {
 										sh "yum install httpd -y"
@@ -21,20 +21,19 @@ pipeline {
 								
 								}
 							
-				
-						stage ('deploy index') {
+							
+						stage ('deploy index') 
 						
 						  steps {
 						
 									sh "cp -r index.html /var/www/html/"
 									sh "chmod -R 777 /var/www/html/index.html"
 						
-						}
+							}
 						
 						}
 				
 				}
 			
 			}
-			
 			
